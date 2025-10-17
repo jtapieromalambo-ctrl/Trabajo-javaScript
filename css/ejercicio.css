@@ -1,0 +1,114 @@
+:root{
+    --color-primary: #000000;
+    --color-segundo: #14213d;
+    --color-tercero: #fca311;
+    --color-cuarto: #e5e5e5;
+    --color-quinto: #ffffff;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#ffffff,#e5e5e589);
+}
+
+.container-header{
+    padding: 0;
+    background: var(--color-tercero) ;
+    height: 70px;
+}
+.nav{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.nav ul{
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+}
+.nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--color-segundo);
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+     transition: .3s;
+}
+.nav ul li a{
+    font-family: sans-serif;
+     text-decoration: none;
+     color: #ffffff;
+     transition: .3s;
+}
+.nav ul li a:hover{
+color: var(--color-tercero);
+}
+.nav ul li:hover{
+    transform: scale(1.2);
+}
+
+
+/*==section==*/
+
+.container-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container h1{
+    color: #14213d;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+.container .btn{
+    border: solid var(--color-segundo);
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: #14213d;
+    transition: .3s;
+    
+}
+.container .btn:hover{
+background: var(--color-segundo);
+color: #fca311;
+transform: scale(1.2);
+}
+.container-img{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.img{
+padding: 10px;   
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 450px;
+height: 350px;
+background: var(--color-cuarto);
+border-radius: 20px;
+overflow:auto;
+}
+.img::-webkit-scrollbar{
+    display: none;
+}
+.img h2{
+    font-family: sans-serif;
+    color: #fca311;
+}
+.img p{
+    color: #14213d;
+    font-family: sans-serif;
+}
+.img img{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+}
